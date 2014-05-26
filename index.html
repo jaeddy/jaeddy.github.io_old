@@ -4,10 +4,12 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap 101 Template</title>
+    <title>James Eddy</title>
 
-    <!-- Bootstrap -->
+    <!-- CSS stylesheets -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="./font-awesome/css/font-awesome.min.css" rel="stylesheet">
+
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -21,7 +23,8 @@
     <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
       <div class="container">
         <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <button type="button" class="navbar-toggle" data-toggle="collapse"
+          data-target=".navbar-collapse">
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
@@ -32,15 +35,21 @@
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
             <li class="active"><a href="#">Home</a></li>
-            <li><a href="./cv.html">CV</a></li>
+            <li class="dropdown"><a class="dropdown-toggle"
+              data-toggle="dropdown" href="#">CV</a>
+              <ul class="dropdown-menu">
+                <li><a tabindex="-1" href="#">Coming Soon!</a></li>
+              </ul>
+            </li>
             <li><a href="https://www.linkedin.com/pub/james-eddy/24/6b9/b91"
-              target="_blank">LinkedIn</a></li>
+              target="_blank"><i class="fa fa-linkedin"></i> | LinkedIn</a></li>
             <li><a href="https://twitter.com/jamesaeddy" target="_blank">
-              Twitter</a></li>
-            <li><a href="https://github.com/jaeddy" target="_blank">Github</a>
+              <i class="fa fa-twitter"></i> | Twitter</a></li>
+            <li><a href="https://github.com/jaeddy" target="_blank">
+              <i class="fa fa-github"></i> | Github</a>
               </li>
-            <li><a href="mailto:james.a.eddy@gmail.com">Contact
-              <i class="icon-envelope icon-white"></i></a></li>
+            <li><a href="mailto:james.a.eddy@gmail.com">
+              <i class="fa fa-envelope"></i> | Contact</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
@@ -49,8 +58,10 @@
     <!-- Main jumbotron for a primary marketing message or call to action -->
     <div class="jumbotron">
       <div class="container">
-        <h1>About Me</h1>
-        <p>This is me clumsily trying to figure out how to build a website using Bootstrap. It's safe to assume that most features don't work yet.</p>
+        <h3>About Me</h3>
+        <p>This is me clumsily trying to figure out how to build a website using
+           Bootstrap. Check out the links above for more info on other sites.
+         </p>
       </div>
     </div>
 
